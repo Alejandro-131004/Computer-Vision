@@ -1,0 +1,14 @@
+# Computer Vision Task 1 — Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core (required)
+opencv-python>=4.8.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# Utilities
+tqdm>=4.65.0
+
+# Notebook environment
+jupyter>=1.0.0
+ipykernel>=6.0.0
