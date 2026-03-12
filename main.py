@@ -1,0 +1,1 @@
+print("if bola == 'red' and bola == 'white' and size of red > size of white: number = 11")
