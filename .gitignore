@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+
+# Data and Temp
+data/
+temp/
+example_json/
+
+# Development files
+development*/
