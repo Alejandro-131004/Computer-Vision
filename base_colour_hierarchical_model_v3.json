@@ -10,7 +10,8 @@
         "h_std",
         "v_p90",
         "v_std",
-        "s_p90"
+        "s_p90",
+        "stripe_score"
     ],
     "feature_mean": [
         -0.8535083564944496,
