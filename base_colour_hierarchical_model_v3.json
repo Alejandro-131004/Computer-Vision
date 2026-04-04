@@ -58,7 +58,7 @@
         "white_black_ratio_max": 0.08
     },
     "knn": {
-        "k": 7,
+        "k": 3,
         "weighted_vote": true,
         "exclude_white_black_from_knn_vote": true
     }
