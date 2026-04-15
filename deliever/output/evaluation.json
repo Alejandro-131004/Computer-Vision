@@ -1,0 +1,460 @@
+{
+  "precision": 0.7604,
+  "recall": 0.7394,
+  "f1": 0.7498,
+  "total_tp": 403,
+  "total_fp": 127,
+  "total_fn": 142,
+  "per_image": [
+    {
+      "image": "106_png.rf.28ee53acf89d9e7f17b2fb26185597a0.jpg",
+      "tp": 6,
+      "fp": 3,
+      "fn": 4,
+      "precision": 0.6667,
+      "recall": 0.6,
+      "f1": 0.6316
+    },
+    {
+      "image": "10a_png.rf.bdc9984ba169594ea32b012098ad10dd.jpg",
+      "tp": 7,
+      "fp": 5,
+      "fn": 3,
+      "precision": 0.5833,
+      "recall": 0.7,
+      "f1": 0.6364
+    },
+    {
+      "image": "110_png.rf.9a38b6057e543f83b58aa59b9748688b.jpg",
+      "tp": 0,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "image": "114_png.rf.98b2144c25b9f48816abd7edb00f365c.jpg",
+      "tp": 14,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.9333,
+      "recall": 0.875,
+      "f1": 0.9032
+    },
+    {
+      "image": "115_png.rf.ed51d53dd5c384b1f26a2b6ece52ad69.jpg",
+      "tp": 7,
+      "fp": 3,
+      "fn": 4,
+      "precision": 0.7,
+      "recall": 0.6364,
+      "f1": 0.6667
+    },
+    {
+      "image": "117_png.rf.8cc2251ee5c44b6bd3734b39795c7cc9.jpg",
+      "tp": 5,
+      "fp": 3,
+      "fn": 4,
+      "precision": 0.625,
+      "recall": 0.5556,
+      "f1": 0.5882
+    },
+    {
+      "image": "119_png.rf.eff91a09289a82f634d7b231b06dbbdd.jpg",
+      "tp": 6,
+      "fp": 2,
+      "fn": 3,
+      "precision": 0.75,
+      "recall": 0.6667,
+      "f1": 0.7059
+    },
+    {
+      "image": "11f_png.rf.eb0169eccfb6b264a582491457ff37b6.jpg",
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.5,
+      "recall": 0.3333,
+      "f1": 0.4
+    },
+    {
+      "image": "121_png.rf.782a44b8496f239b5f996a6ed498e63a.jpg",
+      "tp": 7,
+      "fp": 3,
+      "fn": 4,
+      "precision": 0.7,
+      "recall": 0.6364,
+      "f1": 0.6667
+    },
+    {
+      "image": "122_png.rf.7df85841dad9a1f2d79c7f510f562052.jpg",
+      "tp": 14,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.9333,
+      "recall": 0.875,
+      "f1": 0.9032
+    },
+    {
+      "image": "123_png.rf.c77820fd3abbca5d6265af63564f9564.jpg",
+      "tp": 11,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.8462,
+      "recall": 0.8462,
+      "f1": 0.8462
+    },
+    {
+      "image": "127_png.rf.9f6501b0ba0e856cf6dd9e59f65ce574.jpg",
+      "tp": 11,
+      "fp": 1,
+      "fn": 5,
+      "precision": 0.9167,
+      "recall": 0.6875,
+      "f1": 0.7857
+    },
+    {
+      "image": "128_png.rf.536c0efc16ea6cf15f4f2a6f280450cf.jpg",
+      "tp": 7,
+      "fp": 2,
+      "fn": 3,
+      "precision": 0.7778,
+      "recall": 0.7,
+      "f1": 0.7368
+    },
+    {
+      "image": "129_png.rf.eb2bbec526ed5285770c494673de2c04.jpg",
+      "tp": 6,
+      "fp": 3,
+      "fn": 3,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667
+    },
+    {
+      "image": "12t_png.rf.80855510c9a4d8a3a88e103ed8baeeb7.jpg",
+      "tp": 2,
+      "fp": 1,
+      "fn": 3,
+      "precision": 0.6667,
+      "recall": 0.4,
+      "f1": 0.5
+    },
+    {
+      "image": "130_png.rf.21f92398160a76a64b948884e4c8103c.jpg",
+      "tp": 7,
+      "fp": 5,
+      "fn": 4,
+      "precision": 0.5833,
+      "recall": 0.6364,
+      "f1": 0.6087
+    },
+    {
+      "image": "132_png.rf.071b2e2111df71728a6b770afd959117.jpg",
+      "tp": 8,
+      "fp": 2,
+      "fn": 3,
+      "precision": 0.8,
+      "recall": 0.7273,
+      "f1": 0.7619
+    },
+    {
+      "image": "133_png.rf.a4164ecd79cdd480304adcf094cd17e3.jpg",
+      "tp": 8,
+      "fp": 3,
+      "fn": 3,
+      "precision": 0.7273,
+      "recall": 0.7273,
+      "f1": 0.7273
+    },
+    {
+      "image": "145_png.rf.223f80e4aff2b64f2711cd186532e118.jpg",
+      "tp": 3,
+      "fp": 3,
+      "fn": 4,
+      "precision": 0.5,
+      "recall": 0.4286,
+      "f1": 0.4615
+    },
+    {
+      "image": "151_png.rf.dded9697689a87303c84573468e354a9.jpg",
+      "tp": 14,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.9333,
+      "recall": 0.875,
+      "f1": 0.9032
+    },
+    {
+      "image": "152_png.rf.278ae564b1c981f43016889a9c3240e6.jpg",
+      "tp": 13,
+      "fp": 2,
+      "fn": 3,
+      "precision": 0.8667,
+      "recall": 0.8125,
+      "f1": 0.8387
+    },
+    {
+      "image": "154_png.rf.9667f3add0f6a1d344745423a5d13882.jpg",
+      "tp": 7,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1": 0.875
+    },
+    {
+      "image": "155_png.rf.f3ae78698646b2d6f43fe88d2d1752f4.jpg",
+      "tp": 6,
+      "fp": 4,
+      "fn": 5,
+      "precision": 0.6,
+      "recall": 0.5455,
+      "f1": 0.5714
+    },
+    {
+      "image": "156_png.rf.be7d3c328dad9ee7e3722259541a79d5.jpg",
+      "tp": 3,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1": 0.6
+    },
+    {
+      "image": "15t_png.rf.0c6ff91ce5b83c01c4f9b1acefae2d71.jpg",
+      "tp": 11,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.8462,
+      "recall": 0.8462,
+      "f1": 0.8462
+    },
+    {
+      "image": "163_png.rf.caf94b785a094d025843b480af8738cc.jpg",
+      "tp": 4,
+      "fp": 1,
+      "fn": 4,
+      "precision": 0.8,
+      "recall": 0.5,
+      "f1": 0.6154
+    },
+    {
+      "image": "165_png.rf.24adc446423ba35cdbff16ccaffc9785.jpg",
+      "tp": 9,
+      "fp": 2,
+      "fn": 4,
+      "precision": 0.8182,
+      "recall": 0.6923,
+      "f1": 0.75
+    },
+    {
+      "image": "16a_png.rf.e7f801e6e3e47469fbbd3bdd34677025.jpg",
+      "tp": 10,
+      "fp": 4,
+      "fn": 2,
+      "precision": 0.7143,
+      "recall": 0.8333,
+      "f1": 0.7692
+    },
+    {
+      "image": "18_png.rf.deca17bfe3ef6a0738238319d1dcdd71.jpg",
+      "tp": 6,
+      "fp": 3,
+      "fn": 4,
+      "precision": 0.6667,
+      "recall": 0.6,
+      "f1": 0.6316
+    },
+    {
+      "image": "18t_png.rf.52573d3d561f4ef4c73fbcc5a0d18752.jpg",
+      "tp": 5,
+      "fp": 3,
+      "fn": 3,
+      "precision": 0.625,
+      "recall": 0.625,
+      "f1": 0.625
+    },
+    {
+      "image": "19_png.rf.9bdb39240f3b93c04a458babb9612353.jpg",
+      "tp": 5,
+      "fp": 4,
+      "fn": 3,
+      "precision": 0.5556,
+      "recall": 0.625,
+      "f1": 0.5882
+    },
+    {
+      "image": "19a_png.rf.dd2935e517f1adfcd0a735f3f937fa02.jpg",
+      "tp": 13,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.9286,
+      "recall": 0.8667,
+      "f1": 0.8966
+    },
+    {
+      "image": "20_png.rf.52c78aebcebbb16b65b30edf6e6dc4a5.jpg",
+      "tp": 3,
+      "fp": 5,
+      "fn": 4,
+      "precision": 0.375,
+      "recall": 0.4286,
+      "f1": 0.4
+    },
+    {
+      "image": "21_png.rf.14a3f0eb3df1717c54de3445f3988524.jpg",
+      "tp": 9,
+      "fp": 3,
+      "fn": 4,
+      "precision": 0.75,
+      "recall": 0.6923,
+      "f1": 0.72
+    },
+    {
+      "image": "21a_png.rf.34ea0016904d75da861731071be2058f.jpg",
+      "tp": 12,
+      "fp": 3,
+      "fn": 2,
+      "precision": 0.8,
+      "recall": 0.8571,
+      "f1": 0.8276
+    },
+    {
+      "image": "22f_png.rf.5f4dedb3e61ea2ced7d183a74035d313.jpg",
+      "tp": 5,
+      "fp": 4,
+      "fn": 4,
+      "precision": 0.5556,
+      "recall": 0.5556,
+      "f1": 0.5556
+    },
+    {
+      "image": "23a_png.rf.c51e6e9452d0f5b24425c277e7e93085.jpg",
+      "tp": 14,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.9333,
+      "recall": 0.875,
+      "f1": 0.9032
+    },
+    {
+      "image": "24f_png.rf.ee5f961ec533993bb9907fa09380d92a.jpg",
+      "tp": 7,
+      "fp": 2,
+      "fn": 3,
+      "precision": 0.7778,
+      "recall": 0.7,
+      "f1": 0.7368
+    },
+    {
+      "image": "25f_png.rf.e20424d4f5cc6ff760cbfa7767c3ec32.jpg",
+      "tp": 13,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.9286,
+      "recall": 0.8667,
+      "f1": 0.8966
+    },
+    {
+      "image": "32_png.rf.1edd41098eb074d061f00c09470d90cf.jpg",
+      "tp": 2,
+      "fp": 2,
+      "fn": 3,
+      "precision": 0.5,
+      "recall": 0.4,
+      "f1": 0.4444
+    },
+    {
+      "image": "34_png.rf.407889c8b2afe2a57c57461fa46b2d4f.jpg",
+      "tp": 14,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.9333,
+      "recall": 0.875,
+      "f1": 0.9032
+    },
+    {
+      "image": "35_png.rf.3b3f67570700881bc1962c56d85d95eb.jpg",
+      "tp": 1,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.5,
+      "recall": 0.3333,
+      "f1": 0.4
+    },
+    {
+      "image": "3f_png.rf.81c7e132365ef95bb19380ca389025f6.jpg",
+      "tp": 13,
+      "fp": 3,
+      "fn": 2,
+      "precision": 0.8125,
+      "recall": 0.8667,
+      "f1": 0.8387
+    },
+    {
+      "image": "4a_png.rf.a6bb5c5706fd8628eb53d34a122cf441.jpg",
+      "tp": 9,
+      "fp": 1,
+      "fn": 3,
+      "precision": 0.9,
+      "recall": 0.75,
+      "f1": 0.8182
+    },
+    {
+      "image": "5a_png.rf.bae1d48b3d2d96a990799b836ecebcbb.jpg",
+      "tp": 13,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.8667,
+      "recall": 0.8667,
+      "f1": 0.8667
+    },
+    {
+      "image": "6f_png.rf.4dcfc0c556af56e418f2226f40765059.jpg",
+      "tp": 12,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.8571,
+      "recall": 0.8571,
+      "f1": 0.8571
+    },
+    {
+      "image": "7a_png.rf.7cf9f36a358969bd16be866d1570a303.jpg",
+      "tp": 12,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.8571,
+      "recall": 0.8571,
+      "f1": 0.8571
+    },
+    {
+      "image": "86_png.rf.ed680afb145347de62fa9e5dd2b90bbe.jpg",
+      "tp": 14,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1": 0.875
+    },
+    {
+      "image": "8t_png.rf.a49c210a8d59660de79ffdb07d55a6f6.jpg",
+      "tp": 14,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1": 0.875
+    },
+    {
+      "image": "91_png.rf.d78bae1b26a617eb6363e4345800eb54.jpg",
+      "tp": 0,
+      "fp": 14,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ]
+}
