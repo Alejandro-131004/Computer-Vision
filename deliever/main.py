@@ -424,7 +424,7 @@ def detect_balls(img, mask):
 # =============================================================
 
 def _build_inner_circle_mask(roi_shape, radius_factor=0.45):
-    """Tight circular mask to avoid cloth pixel contamination."""
+    """Defines the central region of the ball"""
     h, w   = roi_shape[:2]
     mask   = np.zeros((h, w), dtype=np.uint8)
     cx, cy = w // 2, h // 2
@@ -436,7 +436,7 @@ def _build_inner_circle_mask(roi_shape, radius_factor=0.45):
 def _compute_stripe_score(roi_bgr, r_factor_inner=0.45, r_factor_outer=0.75):
     """
     Return (stripe_score, ratio_center, ratio_ring).
-    High stripe_score means more white in the ring than the center (stripe ball).
+    High stripe_score means more white in the ring than the central region (stripe ball).
     """
     h, w   = roi_bgr.shape[:2]
     cx, cy = w // 2, h // 2
