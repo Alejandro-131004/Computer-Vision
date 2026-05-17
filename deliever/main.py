@@ -1,4 +1,3 @@
-
 import os
 import sys
 import json
@@ -155,7 +154,7 @@ OPTIMIZED_PARAMS = {
     "s3_purple_solid_score": -3.50000000,
     "s3_purple_stripe_coef": 4.80000000,
     "s3_sigmoid_scale": 6.00000000,
-    "s3_stripe_score_coef": 0.00000000,
+    "s3_stripe_score_coef": 0,
     "s3_white_ratio_coef": 1.10000000,
     "s3_white_ratio_offset": 0.13000000,
     "s3_white_ratio_ring_thr": 0.01000000,
@@ -1131,93 +1130,13 @@ def process_image(image_path, params):
         "balls":      balls,
     }
 
-def evaluate_output(results, csv_path):
-    import csv as csv_module
-    from collections import Counter
-
-    CSV_LABEL_MAP = {
-        "0_white_cue": "cue", "1_yellow_solid": "yellow_solid", "2_blue_solid": "blue_solid",
-        "3_red_solid": "red_solid", "4_purple_solid": "purple_solid", "5_orange_solid": "orange_solid",
-        "6_green_solid": "green_solid", "7_maroon_solid": "maroon_solid", "8_black_8ball": "black",
-        "9_yellow_stripe": "yellow_stripe", "10_blue_stripe": "blue_stripe", "11_red_stripe": "red_stripe",
-        "12_purple_stripe": "purple_stripe", "13_orange_stripe": "orange_stripe",
-        "14_green_stripe": "green_stripe", "15_maroon_stripe": "maroon_stripe",
-    }
-    NUMBER_TO_LABEL = {v: k for k, v in BALL_LABEL_TO_NUMBER.items()}
-
-    gt = {}
-    with open(csv_path, newline="", encoding="utf-8-sig") as f:
-        reader = csv_module.DictReader(f)
-        for row in reader:
-            fname = row["filename"].strip()
-            gt[fname] = {}
-            for col, label in CSV_LABEL_MAP.items():
-                val = row.get(col, "0").strip()
-                gt[fname][label] = int(val) if val else 0
-
-    total_tp, total_fp, total_fn = 0, 0, 0
-    for res in results:
-        fname = Path(res["image_path"]).name
-        if fname not in gt:
-            continue
-        pred_counts = Counter(NUMBER_TO_LABEL[b["number"]] for b in res["balls"])
-        for label, gt_count in gt[fname].items():
-            pred_count = pred_counts.get(label, 0)
-            total_tp += min(gt_count, pred_count)
-            total_fp += max(0, pred_count - gt_count)
-            total_fn += max(0, gt_count - pred_count)
-
-    precision = total_tp / max(total_tp + total_fp, 1)
-    recall    = total_tp / max(total_tp + total_fn, 1)
-    f1        = 2 * precision * recall / max(precision + recall, 1e-9)
-
-    print(f"\nEvaluation vs ground truth:")
-    print(f"  Precision: {precision:.4f}")
-    print(f"  Recall:    {recall:.4f}")
-    print(f"  F1:        {f1:.4f}")
-    print(f"  TP={total_tp}  FP={total_fp}  FN={total_fn}")
-
-    print(f"\n  Per-class breakdown:")
-    print(f"  {'Label':<20} {'GT':>5} {'Pred':>5} {'TP':>5} {'FP':>5} {'FN':>5}")
-    print(f"  {'-'*45}")
-
-    all_labels = sorted(CSV_LABEL_MAP.values())
-    for label in all_labels:
-        gt_total   = sum(gt[f].get(label, 0) for f in gt)
-        pred_total = sum(Counter(NUMBER_TO_LABEL[b["number"]] for b in res["balls"]).get(label, 0)
-                         for res in results if Path(res["image_path"]).name in gt)
-        tp = sum(min(gt[f].get(label, 0),
-                     Counter(NUMBER_TO_LABEL[b["number"]] for b in res["balls"]).get(label, 0))
-                 for res in results for f in [Path(res["image_path"]).name] if f in gt)
-        fp = max(0, pred_total - tp)
-        fn = max(0, gt_total   - tp)
-        print(f"  {label:<20} {gt_total:>5} {pred_total:>5} {tp:>5} {fp:>5} {fn:>5}")
-
-    total_slots = 0
-    total_correct_slots = 0
-
-    for res in results:
-        fname = Path(res["image_path"]).name
-        if fname not in gt:
-            continue
-
-        pred_counts = Counter(NUMBER_TO_LABEL[b["number"]] for b in res["balls"])
-
-        for label in CSV_LABEL_MAP.values():
-            gt_count = gt[fname].get(label, 0)
-            pred_count = pred_counts.get(label, 0)
-            total_correct_slots += min(gt_count, pred_count)
-            total_slots += max(gt_count, pred_count)
-    overall_accuracy = total_correct_slots / max(total_slots, 1)
-    print(f"  Overall accuracy: {overall_accuracy:.4f}")
-
 # =============================================================
 # Entry point
 # =============================================================
 
 def main():
     parser = argparse.ArgumentParser(description="Billiard ball detection and classification")
-    parser.add_argument("--input",  default="input/input.json",    help="Path to input JSON")
+    parser.add_argument("--input",  default="input.json",    help="Path to input JSON")
     parser.add_argument("--output", default="output/output.json",  help="Path to output JSON")
     args = parser.parse_args()
 
@@ -1254,12 +1173,6 @@ def main():
         json.dump(results, f, indent=2)
 
     print(f"\nDone. Results saved to {output_path}")
-
-    gt_csv = Path(args.input).parent / "ground_truth_counts.csv"
-    if gt_csv.exists():
-        evaluate_output(results, gt_csv)
-    else:
-        print(f"Ground truth CSV not found at {gt_csv}, skipping evaluation.")
 
 if __name__ == "__main__":
     main()
