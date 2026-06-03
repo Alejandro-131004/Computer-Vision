@@ -8,5 +8,18 @@ data/
 temp/
 example_json/
 
-8-Ball Pool/
 deliever/
+
+yolo_data/
+
+yolo_data_masked/
+
+models/
+
+rtdetr-l.pt
+yolov8s.pt
+runs/
+assignment1.ipynb
+
+dataset2/
+
