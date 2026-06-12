@@ -14,17 +14,12 @@ yolo_data/
 
 yolo_data_masked/
 
-
+models/
 
 rtdetr-l.pt
 yolov8s.pt
 runs/
 assignment1.ipynb
-
-# Model weights (too large for GitHub; regenerate via training / recover_metrics.py)
-models/
-*.pt
-*.pth
 
 dataset2/
 
