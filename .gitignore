@@ -23,3 +23,7 @@ assignment1.ipynb
 
 dataset2/
 
+checkpoints/
+
+checkpoints_cnn/
+checkpoints_optuna/

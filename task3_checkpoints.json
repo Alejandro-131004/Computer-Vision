@@ -58,5 +58,52 @@
     "mAP50-95": 0.3821413346663127,
     "Precision": 0.6920821114369502,
     "Recall": 0.7637540453074434
+  },
+  "grounding_dino_results": {
+    "mAP50": 0.9029575130462049,
+    "mAP50-95": 0.7391176377721175,
+    "Precision": 0.9034267912772586,
+    "Recall": 0.9385113268608414
+  },
+  "grounding_dino_results__balls": {
+    "mAP50": 0.8115833982419051,
+    "mAP50-95": 0.6116061099652828,
+    "Precision": 0.9653846153846154,
+    "Recall": 0.8122977346278317
+  },
+  "grounding_dino_results__billiard_balls": {
+    "mAP50": 0.9061011637377882,
+    "mAP50-95": 0.7316039629847407,
+    "Precision": 0.9051987767584098,
+    "Recall": 0.9579288025889967
+  },
+  "grounding_dino_results__balls_billiard_blue": {
+    "mAP50": 0.9029575130462049,
+    "mAP50-95": 0.7391176377721175,
+    "Precision": 0.9034267912772586,
+    "Recall": 0.9385113268608414
+  },
+  "grounding_dino_results__comparison": {
+    "balls": {
+      "prompt": "balls.",
+      "mAP50": 0.8115833982419051,
+      "mAP50-95": 0.6116061099652828,
+      "Precision": 0.9653846153846154,
+      "Recall": 0.8122977346278317
+    },
+    "billiard_balls": {
+      "prompt": "billiard balls.",
+      "mAP50": 0.9061011637377882,
+      "mAP50-95": 0.7316039629847407,
+      "Precision": 0.9051987767584098,
+      "Recall": 0.9579288025889967
+    },
+    "balls_billiard_blue": {
+      "prompt": "balls. billiard balls. blue balls.",
+      "mAP50": 0.9029575130462049,
+      "mAP50-95": 0.7391176377721175,
+      "Precision": 0.9034267912772586,
+      "Recall": 0.9385113268608414
+    }
   }
 }

@@ -1,0 +1,18 @@
+Model                                             val_MAE  val_MSE  val_sMAPE  test_MAE  test_MSE  test_sMAPE
+-----------------------------------------------------------------------------------------------
+DINOv2 ViT-B 2blocks Poisson (PT)                  1.2785   3.3417      16.11    1.7214    6.4202       18.49
+DINOv2 ViT-B 2blocks Poisson                       1.4546   4.2366      14.51    1.7967    6.6055       18.41
+DINOv2 ViT-S 4blocks Poisson (PT)                  1.3029   3.7953      14.60    1.8109    6.3050       18.78
+DINOv2 ViT-S frozen Poisson                        1.3727   3.8500      15.12    1.8402    7.2403       19.08
+Ensemble DINOv2+SVR                                1.4723   4.2662      16.61    1.8885    7.1742       19.80
+DINOv2 ViT-S 2blocks Huber                         1.1403   3.1340      12.48    1.9072    6.8046       19.32
+DINOv2 ViT-S 4blocks Poisson                       1.1637   3.4193      11.99    1.9208    7.7289       18.66
+DINOv2 ViT-S frozen+RF                             1.9348   5.6106      21.45    2.0488    7.7084       21.00
+DINOv2 ViT-S frozen+RF (PT)                        1.9348   5.6106      21.45    2.0488    7.7084       21.00
+DINOv2 ViT-S 2blocks Huber (PT)                    1.2046   3.6774      13.28    2.0528    8.1002       20.20
+SVR HOG+color                                      2.4093   9.8018      26.09    2.2152    9.2460       22.53
+MobileNetV3 frozen Huber                           3.1385  14.9178      33.75    2.7926   12.5485       27.78
+MobileNetV3 frozen Poisson                         3.1000  14.4349      33.52    2.8022   12.2004       27.75
+MobileNetV3 5ch Poisson                            3.1008  13.6628      33.31    2.9656   12.6795       29.54
+EfficientNet-B0 frozen MSE                         2.2877   8.5357      37.02    3.1799   15.5130       32.03
+EfficientNet-B0 unfrozen MSE                       2.9588  11.3948      35.95    3.2966   13.6283       33.71
