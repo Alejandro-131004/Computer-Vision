@@ -1,0 +1,35 @@
+Model                           val_MAE  val_MSE  val_sMAPE  test_MAE  test_MSE  test_sMAPE
+----------------------------------------------------------------------------------------
+Res2Net50 (PT)                   0.7903   1.1440       8.38    1.2031    2.3908       12.47
+SE-ResNeXt50 (PT)                0.9814   1.7819      10.72    1.3021    2.8162       14.00
+Res2Net50 (scratch)              1.0133   1.6067      10.27    1.6147    4.4089       17.15
+
+
+Best augmentation params per model:
+
+SE-ResNeXt50 (PT):
+  rotation_max: 3.0424224295953772
+  use_hflip: True
+  translation_max: 0.043684371029706286
+  noise_std: 15.296322368059487
+  brightness_delta: 0.04184815819561255
+  contrast_delta: 0.08764339456056544
+  saturation_delta: 0.09159046082342293
+
+Res2Net50 (PT):
+  rotation_max: 7.8103864413696
+  use_hflip: True
+  translation_max: 0.10234834901327795
+  noise_std: 24.91913330590699
+  brightness_delta: 0.15545120388953526
+  contrast_delta: 0.14731428467862268
+  saturation_delta: 0.11271855068329403
+
+Res2Net50 (scratch):
+  rotation_max: 0.884925020519195
+  use_hflip: True
+  translation_max: 0.04879954961448965
+  noise_std: 9.71693224223705
+  brightness_delta: 0.08140470953216877
+  contrast_delta: 0.24862125274557878
+  saturation_delta: 0.08918833167339732

@@ -1,0 +1,11 @@
+Model                                                    val_MAE  val_MSE  val_sMAPE  test_MAE  test_MSE  test_sMAPE
+--------------------------------------------------------------------------------------------------------------
+ViT-B 2b Poisson | PT-nomask | FT-nomask                  0.7805   1.3654       9.28    1.0456    2.1636        9.95
+ViT-B 2b Poisson | scratch | FT-nomask                    0.9308   1.4484      11.54    1.3605    3.1214       13.57
+ViT-S 2b Huber | PT-nomask | FT-nomask                    0.8088   1.2181       9.10    1.4663    3.3274       14.81
+ViT-B 2b Poisson | PT-nomask | FT-mask                    1.0441   2.4740      11.72    1.6287    5.6424       17.13
+ViT-S 4b Poisson | PT-nomask | FT-nomask                  1.3370   2.8619      14.53    1.6351    4.4857       16.61
+ViT-S 4b Poisson | scratch | FT-nomask                    1.1705   2.1934      13.37    1.6801    4.1279       16.71
+ViT-S 2b Huber | scratch | FT-nomask                      1.4262   3.1164      16.05    2.0513    6.4118       20.64
+ViT-S 4b Poisson | PT-nomask | FT-mask                    1.5665   5.1954      16.63    2.0931    6.9606       20.92
+ViT-S 2b Huber | PT-nomask | FT-mask                      1.1929   3.5472      13.73    2.2073    8.3327       22.39

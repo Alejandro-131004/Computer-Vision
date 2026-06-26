@@ -1,0 +1,78 @@
+======================================================================
+Evaluating DEFAULT config: {'arch': 'A1', 'translate': 40, 'rotate': 15, 'scale': None, 'color_jitter': None, 'hflip': False, 'margin': 0.5, 'lr': 0.001, 'embed_dim': 64}
+DEFAULT  Recall@5=0.307  MeanRank=70.087  Sanity=0.857
+======================================================================
+
+--- Searching: arch (current best=A1) ---
+  arch=A1  (default, skipping)
+  Testing arch=A2 ...
+  arch=A2  Recall@5=0.113  MeanRank=90.613  Sanity=0.857
+  Testing arch=A3 ...
+  arch=A3  Recall@5=0.273  MeanRank=88.493  Sanity=0.857
+  Best arch=A1  Recall@5=0.307
+
+--- Searching: translate (current best=40) ---
+  Testing translate=20 ...
+  translate=20  Recall@5=0.307  MeanRank=83.927  Sanity=0.857
+  translate=40  (default, skipping)
+  Testing translate=60 ...
+  translate=60  Recall@5=0.293  MeanRank=71.707  Sanity=0.833
+  Best translate=40  Recall@5=0.307
+
+--- Searching: rotate (current best=15) ---
+  Testing rotate=10 ...
+  rotate=10  Recall@5=0.267  MeanRank=81.707  Sanity=0.881
+  rotate=15  (default, skipping)
+  Testing rotate=20 ...
+  rotate=20  Recall@5=0.307  MeanRank=82.660  Sanity=0.857
+  Best rotate=15  Recall@5=0.307
+
+--- Searching: scale (current best=None) ---
+  scale=None  (default, skipping)
+  Testing scale=(0.9, 1.1) ...
+  scale=(0.9, 1.1)  Recall@5=0.307  MeanRank=84.847  Sanity=0.833
+  Best scale=None  Recall@5=0.307
+
+--- Searching: color_jitter (current best=None) ---
+  color_jitter=None  (default, skipping)
+  Testing color_jitter=light ...
+  color_jitter=light  Recall@5=0.320  MeanRank=76.360  Sanity=0.786
+  Testing color_jitter=medium ...
+  color_jitter=medium  Recall@5=0.287  MeanRank=85.633  Sanity=0.595
+  Best color_jitter=light  Recall@5=0.320
+
+--- Searching: hflip (current best=False) ---
+  hflip=False  (default, skipping)
+  Testing hflip=True ...
+  hflip=True  Recall@5=0.293  MeanRank=73.760  Sanity=0.643
+  Best hflip=False  Recall@5=0.320
+
+--- Searching: margin (current best=0.5) ---
+  Testing margin=0.3 ...
+  margin=0.3  Recall@5=0.347  MeanRank=86.927  Sanity=0.810
+  margin=0.5  (default, skipping)
+  Testing margin=0.7 ...
+  margin=0.7  Recall@5=0.340  MeanRank=84.793  Sanity=0.810
+  Best margin=0.3  Recall@5=0.347
+
+--- Searching: lr (current best=0.001) ---
+  lr=0.001  (default, skipping)
+  Testing lr=0.0005 ...
+  lr=0.0005  Recall@5=0.307  MeanRank=80.973  Sanity=0.810
+  Testing lr=0.0001 ...
+  lr=0.0001  Recall@5=0.287  MeanRank=85.140  Sanity=0.810
+  Best lr=0.001  Recall@5=0.347
+
+--- Searching: embed_dim (current best=64) ---
+  embed_dim=64  (default, skipping)
+  Testing embed_dim=128 ...
+  embed_dim=128  Recall@5=0.353  MeanRank=85.547  Sanity=0.738
+  Testing embed_dim=256 ...
+  embed_dim=256  Recall@5=0.360  MeanRank=80.180  Sanity=0.738
+  Best embed_dim=256  Recall@5=0.360
+
+======================================================================
+GREEDY SEARCH COMPLETE
+Best config:   {'arch': 'A1', 'translate': 40, 'rotate': 15, 'scale': None, 'color_jitter': 'light', 'hflip': False, 'margin': 0.3, 'lr': 0.001, 'embed_dim': 256}
+Best Recall@5: 0.360
+======================================================================
